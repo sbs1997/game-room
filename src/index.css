@@ -1,0 +1,80 @@
+:root{
+    --bg-color: #99cccc;
+    --accent-color: #cc99cc;
+    --dark-accent: #854385;
+    --light-text: #e6e6cc; 
+    background-color: var(--bg-color);
+    color: black;
+}
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+#navBar a{
+    color:black ; 
+    background-color: var(--accent-color);
+    padding: 15px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+#navBar a.active{
+    background-color: var(--dark-accent) ; 
+    color: var(--light-text);
+    box-shadow: 5px 5px 2px var(--accent-color);
+}
+#ticTacToeBoard{
+    padding: 10px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 50%;
+    height: 600px;
+    gap: 10px;
+    color: black;
+    background-color: var(--dark-accent);
+}
+.square8{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.square3{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.square4{
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.square1{
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.square5{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.square9{
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.square6{
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.square7{
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.square2{
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    text-align: center;
+}
