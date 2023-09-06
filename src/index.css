@@ -3,6 +3,27 @@
     --accent-color: #cc99cc;
     --dark-accent: #854385;
     --light-text: #e6e6cc; 
+
+    /* --bg-color: #666699;
+    --accent-color: #b89494;
+    --dark-accent: #996666;
+    --light-text: #e6e6cc;  */
+
+    /* --bg-color: #666699;
+    --accent-color: #85adad;
+    --dark-accent: #5c7389;
+    --light-text: #e6e6cc;  */
+
+    /* --bg-color: black;
+    --accent-color: #05c880;
+    --dark-accent: #037d50;
+    --light-text: white;  */
+    
+    /* --bg-color: black;
+    --accent-color: #b6b6b6;
+    --dark-accent: #838383;
+    --light-text: white;  */
+
     background-color: var(--bg-color);
     color: black;
 }
@@ -17,6 +38,7 @@
     padding: 15px;
     transition: 0.2s;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #navBar a.active{
     background-color: var(--dark-accent) ; 
@@ -34,6 +56,11 @@
     gap: 10px;
     color: black;
     background-color: var(--dark-accent);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#endgameText{
+  font-size: 24px;
+  text-align: center;
 }
 .square8{
   grid-column-start: 1;
@@ -72,9 +99,30 @@
   grid-row-start: 3;
 }
 .square{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--accent-color);
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#scoreboard{
+  width: 95%;
+  border-collapse: collapse;
+}
+#scoreboard tbody td{
+  border-top: 2px solid var(--light-text);
+  background-color: var(--accent-color);
+  padding: 3px;
+}
+#scoreboard thead td{
+  background-color: var(--dark-accent);
+  color: var(--light-text);
+  padding: 3px;
+}
+#scoreContainer{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }

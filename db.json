@@ -1,0 +1,18 @@
+{"users": [
+    {
+        "id": 1,
+        "name": "Sky",
+        "tttWins": 0,
+        "tttDraws": 59,
+        "tttLosses": 3,
+        "triviaResults": [1, 8, 9, 5, 8]
+    },
+    {
+        "id": 2,
+        "name": "Samantha",
+        "tttWins": 0,
+        "tttDraws": 5,
+        "tttLosses": 343,
+        "triviaResults": [1, 8, 9, 5, 8]
+    }
+]}
