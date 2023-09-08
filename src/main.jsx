@@ -13,21 +13,19 @@ import Scoreboard from './pages/Scoreboard';
 import TicTacToe from './pages/TicTacToe';
 import Trivia from './pages/Trivia';
 import Home from './pages/Home';
-import Nav from './pages/Nav';
+import Nav from './components/Nav';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-        <Route path='/' element={<Nav/>}>
-          <Route index element={<Home/>}/>
-          <Route path='tictactoe' element={<TicTacToe/>}/>
-          <Route path='trivia' element={<Trivia/>}/>
-          <Route path='scoreboard' element={<Scoreboard/>}/>
-        </Route>
+    <Route path='/' element={<Nav/>}>
+      <Route index element={<Home/>}/>
+      <Route path='tictactoe' element={<TicTacToe/>}/>
+      <Route path='trivia' element={<Trivia/>}/>
+      <Route path='scoreboard' element={<Scoreboard/>}/>
+    </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );

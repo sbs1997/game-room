@@ -1,18 +1,18 @@
 import React from 'react'
 
-function Square({id, pickSquare, playerPicks, computerPicks, gameOver}) {
+function Square({id, pickSquare, playerPicks, computerPicks, gameOver, playerTurn}) {
     const owner = playerPicks.includes(id) ? "X" : computerPicks.includes(id) ? "O" : ""
     return (
-            <div 
+        <div 
             className={`square${id} square`}
             onClick={()=>{
-                if (!playerPicks.includes(id) && !computerPicks.includes(id) && !gameOver){
+                if (!playerPicks.includes(id) && !computerPicks.includes(id) && !gameOver && playerTurn){
                     pickSquare(id)
                 }
             }}
-            >
-                {owner}
-            </div>
+        >
+            {owner}
+        </div>
     )
 }
 

@@ -1,62 +1,64 @@
 :root{
-    --bg-color: #99cccc;
-    --accent-color: #cc99cc;
-    --dark-accent: #854385;
-    --light-text: #e6e6cc; 
+  --bg-color: #99cccc;
+  --accent-color: #cc99cc;
+  --dark-accent: #854385;
+  --light-text: #e6e6cc; 
+  --base-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    /* --bg-color: #666699;
-    --accent-color: #b89494;
-    --dark-accent: #996666;
-    --light-text: #e6e6cc;  */
+  /* --bg-color: #666699;
+  --accent-color: #b89494;
+  --dark-accent: #996666;
+  --light-text: #e6e6cc;  */
 
-    /* --bg-color: #666699;
-    --accent-color: #85adad;
-    --dark-accent: #5c7389;
-    --light-text: #e6e6cc;  */
+  /* --bg-color: #666699;
+  --accent-color: #85adad;
+  --dark-accent: #5c7389;
+  --light-text: #e6e6cc;  */
 
-    /* --bg-color: black;
-    --accent-color: #05c880;
-    --dark-accent: #037d50;
-    --light-text: white;  */
-    
-    /* --bg-color: black;
-    --accent-color: #b6b6b6;
-    --dark-accent: #838383;
-    --light-text: white;  */
+  /* --bg-color: black;
+  --accent-color: #05c880;
+  --dark-accent: #037d50;
+  --light-text: white;  */
+  
+  /* --bg-color: black;
+  --accent-color: #b6b6b6;
+  --dark-accent: #838383;
+  --light-text: white;  */
 
-    background-color: var(--bg-color);
-    color: black;
+  background-color: var(--bg-color);
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #navBar{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
 }
 #navBar a{
-    color:black ; 
-    background-color: var(--accent-color);
-    padding: 15px;
-    transition: 0.2s;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color:black ; 
+  background-color: var(--accent-color);
+  padding: 15px;
+  transition: 0.2s;
+  border-radius: 5px;
+  box-shadow: var(--base-shadow);
 }
 #navBar a.active{
-    background-color: var(--dark-accent) ; 
-    color: var(--light-text);
-    box-shadow: 5px 5px 2px var(--accent-color);
+  background-color: var(--dark-accent) ; 
+  color: var(--light-text);
+  box-shadow: 5px 5px 2px var(--accent-color);
 }
 #ticTacToeBoard{
-    padding: 10px;
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 50%;
-    height: 600px;
-    gap: 10px;
-    color: black;
-    background-color: var(--dark-accent);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 50%;
+  height: 600px;
+  gap: 10px;
+  color: black;
+  background-color: var(--dark-accent);
+  box-shadow: var(--base-shadow);
 }
 #endgameText{
   font-size: 24px;
@@ -105,7 +107,7 @@
   background-color: var(--accent-color);
   text-align: center;
   font-size: 32px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 #scoreboard{
   width: 95%;
@@ -115,6 +117,7 @@
   border-top: 2px solid var(--light-text);
   background-color: var(--accent-color);
   padding: 3px;
+  
 }
 #scoreboard thead td{
   background-color: var(--dark-accent);
@@ -125,4 +128,88 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+#talkingSpot{
+  text-align: center;
+}
+.startButton{
+  background-color: var(--accent-color);
+  border: none;
+  margin-bottom: 10px;
+  font-size: 24px;
+  width: 25%;
+  box-shadow: var(--base-shadow);
+}
+#startDiv{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 24px;
+}
+#userSelect{
+  background-color: var(--accent-color);
+  border: none;
+  display: inline;
+  box-shadow: var(--base-shadow);
+  margin-left: 8px;
+  font-size: 16px;
+}
+.formButton{
+  background-color: var(--accent-color);
+  border: none;
+  font-size: 24px;
+  width: 25%;
+  box-shadow: var(--base-shadow)
+}
+#nameInput{
+  background-color: var(--accent-color);
+  border: none;
+  font-size: 24px;
+  width: 25%;
+  box-shadow: var(--base-shadow)
+}
+.questionCard{
+  background-color: var(--accent-color);
+  box-shadow: var(--base-shadow);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 45%;
+  border-radius: 10px;
+}
+#triviaContainer{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.question{
+  padding: 10px;
+  margin-left: 10px;
+}
+.answer{
+  list-style-type: upper-alpha;
+  list-style-position: inside;
+  background-color: var(--dark-accent);
+  color: var(--light-text);
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 25px;
+  margin-left:25px;
+  border-radius: 5px;
+  box-shadow: var(--base-shadow);
+}
+.selected{
+  background-color: var(--light-text);
+  color: black;
+}
+#result{
+  padding: 10px
+}
+#scorecard{
+  background-color: var(--light-text);
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
 }

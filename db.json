@@ -1,18 +1,90 @@
-{"users": [
+{
+  "users": [
     {
-        "id": 1,
-        "name": "Sky",
-        "tttWins": 0,
-        "tttDraws": 59,
-        "tttLosses": 3,
-        "triviaResults": [1, 8, 9, 5, 8]
+      "name": "Sky",
+      "tttWins": 0,
+      "tttDraws": 59,
+      "tttLosses": 5,
+      "triviaResults": [
+        1,
+        8,
+        9,
+        5,
+        8
+      ],
+      "id": 1
     },
     {
-        "id": 2,
-        "name": "Samantha",
-        "tttWins": 0,
-        "tttDraws": 5,
-        "tttLosses": 343,
-        "triviaResults": [1, 8, 9, 5, 8]
+      "name": "Samantha",
+      "tttWins": 0,
+      "tttDraws": 6,
+      "tttLosses": 343,
+      "triviaResults": [
+        1,
+        2,
+        4,
+        3,
+        7
+      ],
+      "id": 2
+    },
+    {
+      "name": "Carolyn",
+      "tttWins": 1,
+      "tttDraws": 1,
+      "tttLosses": 1,
+      "triviaResults": [
+        5
+      ],
+      "id": 3
+    },
+    {
+      "name": "Riley",
+      "tttWins": 0,
+      "tttDraws": 1,
+      "tttLosses": 0,
+      "triviaResults": [],
+      "id": 4
+    },
+    {
+      "name": "Nile",
+      "tttWins": 0,
+      "tttDraws": 6,
+      "tttLosses": 1,
+      "triviaResults": [
+        8,
+        4,
+        6,
+        6,
+        7,
+        6,
+        5
+      ],
+      "id": 5
+    },
+    {
+      "name": "Kora",
+      "tttWins": 0,
+      "tttDraws": 2,
+      "tttLosses": 6,
+      "triviaResults": [
+        8
+      ],
+      "id": 6
+    },
+    {
+      "name": "Nick",
+      "tttWins": 1,
+      "tttDraws": 56,
+      "tttLosses": 0,
+      "triviaResults": [
+        9,
+        8,
+        6,
+        6,
+        5
+      ],
+      "id": 7
     }
-]}
+  ]
+}
