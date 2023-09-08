@@ -4,7 +4,7 @@ import useUserIdStore from '../hooks/userIDStore'
 
 function TicTacToe() {
     const squareIndex = [8, 3, 4, 1, 5, 9, 6, 7, 2]
-    const [playerTurn, setPlayerTurn] = useState(false)
+    const [playerTurn, setPlayerTurn] = useState(true)
     const [playerPicks, setPlayerPicks] = useState([])
     const [computerPicks, setComputerPicks] = useState([])
     const [remainingPicks, setRemainingPicks] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -231,18 +231,19 @@ function TicTacToe() {
             <div id="startDiv">
                 <h2>Lets Get Started!</h2>
                 <button className="startButton" onClick={()=>{
-                    setStarted(true)
-                    setPlayerTurn(true)
-                }}>Go First</button>
-                <button className="startButton" onClick={()=>{
-                    setStarted(true)
-                    setTimeout(()=>{
-                        pickSquare(computerSelection(playerPicks, computerPicks, remainingPicks))
-                    }, 2000)
-                }}>Go Second</button>
+                    setPlayerTurn(!playerTurn)
+                }}>Go {playerTurn ? "First" : "Second"}</button>
                 <button className="startButton" 
                     onClick={()=>setHardMode(!hardMode)} 
                 >Difficulty: {hardMode? "Hard" : "Easy"}</button>
+                <button className="startButton" onClick={()=>{
+                    setStarted(true)
+                    if (!playerTurn){
+                        setTimeout(()=>{
+                            pickSquare(computerSelection(playerPicks, computerPicks, remainingPicks))
+                        }, 2000)
+                    }
+                }}>Start!</button>
             </div>
         }
         </>
